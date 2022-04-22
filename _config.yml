@@ -19,7 +19,7 @@ menu:
     icon: ""
 
   - text: About
-    link: /about.html
+    link: /about.md
     icon: ""
 
   - text: Safety
