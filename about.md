@@ -8,6 +8,6 @@ layout: default
 
 ![](docs/images/avatar-photo.jpg)
 
-*image_caption*
+*Me Hiking!*
 
-Write something about yourself, your course of study, why you took this Poly-Wide elective and what you hope to gain by the end of this module.
+Im Adrian Chan and im a year 3 student studying aeronautical engineering.
