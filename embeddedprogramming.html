@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Embedded Programming</title>
+	<link rel="stylesheet" type="text/css" href="aboutstyle.css">
+</head>
+<body>
+<h1>Embedded Programming</h1>
+		<nav>
+            <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="documentations.html">Documentations</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="aboutme.html"> About Me </a></li>
+            <li><a href="fdfabagreement.html"> DFAB Agreement </a></li>
+            </ul>
+        </nav>
+            <p>Now in this topic we will be talking about programming the PCB I made in the previous topic. I will be testing the Tiny412 Helloboard and it will come to life! First off we need to set up Arduino IDE so that I can communicate with the board. Arduino IDE needs to be configured to be able to recongise the Tiny412 Helloboard. Thus in order in to do that, we need to install the core into Arduino IDE. To start off, we need to search online for an appropriate core to download so that we can install in Arduino IDE. We found a suitable Tiny412 core on <a href="https://github.com/SpenceKonde/megaTinyCore"><u><b>SpenceKondes</b></u></a> gitHub repository. As you can see in the pictures below we copied the url address of the core and pasted it in Arduino.</p>
+            <img src="spencekonde.jpeg">
+            <img src="spencekondearduino.jpeg">
+            <p>Following that we needed to install the core into the arduino system via the boards manager. Now that the url for where the core is pasted in, the desired core will be visible in the manager. The only thing we need to do is to install the latest version of the supported core. Below is an image of the core visible in the boards manager.</p>
+            <img src="spencekondecore.jpeg">
+            <p>Next up is to set its setting and select some options on how the board will run. First, head down to tools and select the right board, in my case its the Tiny412. </p>
+            <img src="selecttiny412.jpeg">
+            <p>After that select the approriate COM port, in my case its COM port 6. However if it isnt seen, plug your PCB out restart your computer and plug it back in, you should be able to see it. In order to find out what COM port you are using you can see it in the device manager, as seen below.</p>
+            <img src="devicemanager.jpeg">
+            <p>Following that, its selecting the board options that depend on your PCB. This can we seen in the tools tab as seen below.</p>
+            <img src="toolstab.jpeg">
+                <p class="center">For my board here are the options:</p>
+            <ul class= "no-bullets">
+                <li>Chip: ATiny412</li>
+                <li>Clock: 8MHz Internal</li>
+                <li>Startup Time: 8ms</li>
+                <li>Programmer: SerialUPDI-SLOW</li>
+            </ul>
+            <p class="center">For the rest of the options, I set it on the default pre-selected options.</p>
+            <p>Now we can write a simple code that will test the circuit and whether the board works! Below is a simple code that instructs the board to blink every half a second.</p>
+            <img src="tiny412code.jpeg">
+            <p>After the code is checked and compiled, it is ready to be uploaded. Uploading a sketch using the standard procedure needs the presence of the bootloader. Instead, by choosing the external programmer as option to upload a sketch will upload the sketch using the entire flash memory space. Thus a upload using programmer option is needed to be selected. In the image below you can see the selection made.</p>
+            <img src="uploadprogrammer.jpeg">
+            <p>Upon uploading it seems as though the board isnt responding, after consulting Mr chew, my lecturer, he says that my board isnt soldered well! Some pads had too much solder some has no solder... But rest assured Mr Chew encouraged me, with more experience my soldering will get better!</p>
+            <img src="encouragement.jpeg">
+            <p>And after some playing around and testing my board is fully funtional! Here is a video of it blinking every time I press the push button!!!</p>
+            <video class="small" autoplay muted>
+                <source src="pushbutton.mp4" type="video/mp4">
+            </video>
+
+</body>       
+        <div>
+            <p class="center">Click <a href="documentations.html"><b><u>here</u></b></a> to return back to documentations!!</p>
+        </div>
+        <footer>
+            <p>Copyright-FDigitalFabrications2022</p>
+            <a href="adriansiangjichan@gmail.com">adriansiangjichan@gmail.com</a>
+        </footer>

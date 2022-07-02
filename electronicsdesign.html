@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PCB Design</title>
+	<link rel="stylesheet" type="text/css" href="aboutstyle.css">
+</head>
+<body>
+<h1>PCB Design</h1>
+		<nav>
+            <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="documentations.html">Documentations</a></li>
+            <li><a href="projects.html">Project</a></li>
+            <li><a href="aboutme.html"> About Me </a></li>
+            <li><a href="fdfabagreement.html"> DFAB Agreement </a></li>
+            </ul>
+        </nav>
+        	<p>The previous topic we talked about production of a PCB, now have you ever wonder what goes on before that? In this page we shall talk about how that is done, which is conciving the design of circuit boards!</p>
+        	<p>First off, before a circuit board is made, it needs to know what will its purpose be. That way, the PCB will be able to take on its tasks efficiently. Therefore, before designs are drafted up, there needs to be the some user studies which includes the identification of the problem. For example, before a digital watch is made, its size constraints and function needs to be known, thus allowing manufacturers to produce a clean design. As such, the commercially built watch below is a perfect example of a well thought out PCB design.</p>
+        	<img src="watch.jpeg">
+        	<p>Therefore, PCB design is highly important, espcially when size is a big factor. So after a PCB is planned out, what will the process it undertakes before become a real PCB? Below is a drawn out mind map to help you understand how the process takes place!</p>
+        	<img src="pcbprocess.jpg">
+        	<p>The process starts out with a sketch of how the pcb circuit will look like on paper, there mistakes can be easily removed and improvements can be easily added in! Following that a PCB design software is needed to draft up the design. Some typical software used are electronic design automation (EDA), KiCAD and Eagle. Upon designing it on computer, a schematic is produced, showing where the components are connected to. Following that, the designs are put thru an elctrical rules check, where it enables designers to screen a PCB design for signal quality. Next up, the board layout is planned, ensuring that all of the componets are able to connected correctly while ensuring the desired size. After this, the board designs are exported in different fomats depending on the pabrication method. If the board is manufactured commercially, it is exported to a gerber file and sent to the board house. Alternatively, a gerber file can produce a g-code with a software called flatcam. Eagle also has a built in software allowing g-code to be generated as well. Lastly, a svg/png file can be exported and thru the mods website, a g-code can be generated. Once a g-code is generated, the cnc machine is put into action and a PCB is made! </p>
+        	<p>Starting off, I wanted to make Tiny412 Helloboard as it could do multitudes of functions with a single board. Therefore I planned to design the board on eagle. Firstly, a schematic was drafted out with where the components are connected to. Below is the schematic drafted in eagle.</p>
+        	<img src="schematic.jpeg">
+        	<p>Following that, the board layout was computed. This part was abit challenging as the placement of the components at the right place with the tracks connecting fully was hard to acheive. Some of the components were unable to get across the board to have a successful connection. Below is a picture of the finaly board layout, fully connected after multiple tries. </p>
+        	<img src="boardlayout.jpeg">
+        	<p>On the board layout above, the component connections are indicated in red, the components are indicated in white, the pins are indicated in green and the board outline is indicated in blue. With this a png photo was exported and a g-code was produced with the mods website. Below is a picture of the board traces.</p>
+        	<img src="tiny412traces.png">
+        	<p>After this, the design went thru the fabrication process which was covered in the previous topic. To view that topic click <a href="electronicsproduction.html"><u><b>HERE</b></u></a>!! The hello board was then completed with the final soldering as seen below.</p>
+        	<img class="small" src="tiny412soldering.jpg">
+        	<p>Below is an image of the final board, with all the components soldered carfully. Next up is the board testing and programming, this will be covered in the next topic. To skip there click <a href="embeddedprogramming.html"><u><b>HERE</b></u></a>!!</p>
+        	<img src="tiny412hello.jpg">
+ </body>       
+ 		<div>
+			<p class="center">Click <a href="documentations.html"><b><u>here</u></b></a> to return back to documentations!!</p>
+		</div>
+		<footer>
+            <p>Copyright-FDigitalFabrications2022</p>
+            <a href="adriansiangjichan@gmail.com">adriansiangjichan@gmail.com</a>
+        </footer>
