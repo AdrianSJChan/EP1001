@@ -97,6 +97,8 @@ img.small{
   margin-left: auto;
   margin-right: auto;
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 video{
   width:80%;
@@ -112,4 +114,26 @@ video.small{
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+.column {
+  float: right;
+  width: 40%;
+  height: auto;
+  padding: 70px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+code {
+  font-family: Consolas,"courier new";
+  color: #ffa500;
+  background-color: #800080;
+  padding: 20px;
+  border: 5px solid #000000;
+  display: block;
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
 }
